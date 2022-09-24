@@ -1,0 +1,38 @@
+@import '../StyleGuide.scss';
+
+.main {
+    // min-height: 100vh;
+    padding: $head64 0;
+    flex: 1;
+    @include flexCenter();
+    flex-direction: column;
+    
+    
+    .title {
+      font-family: 'Ms Madi', cursive; 
+      font-size: $head64;
+      font-weight:200;
+      text-align: center;
+      color: $gray850Color;
+      margin: 0;
+  
+      span{
+        font-family: 'Raleway', sans-serif;
+        font-size:$head28;
+        font-weight: 600;
+      }
+    }
+}
+
+.grid {
+    display: flex;
+    align-items: stretch;
+    // justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: $head20 0;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      flex-direction: column;
+    }
+}

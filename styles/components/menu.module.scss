@@ -1,0 +1,32 @@
+@import '../StyleGuide.scss';
+
+
+.menu{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: $gray200Color;
+    
+    border: calc($border1/2) solid $gray400Color;
+    border-left: 0;
+    border-right: 0;
+    box-sizing: border-box;
+    padding:$gap*2 0;
+    text-align: center;
+    @include flexCenter();
+
+    h2{
+        margin: 0;
+        font-size: $head20;
+        a{
+            padding:0 $gap*2.5;
+            font-weight:500;
+            &:hover,&:focus,&:active{
+                color: $basicBlueColor;
+                
+                
+            }
+        }
+    }
+    
+}

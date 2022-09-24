@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Cinzel:wght@400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Ms+Madi&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+// 網格
+$xs: 595px;
+$sm: 959px;
+$md: 1263px;
+$lg: 1903px;
+
+$head64: 4rem; // 64px;
+$head48: 3rem; // 48px;
+$head32: 2rem; // 32px;
+$head28: 1.75rem; // 28px;
+$head24: 1.5rem; // 24px;
+$head22: 1.375rem; // 22px;
+$head20: 1.25rem; // 20px;
+$word18: 1.125rem; // 18px
+$word16: 1rem; // 16px
+$word14: 0.875rem; // 14px
+$note13:0.8125rem; // 13px
+$notes12: 0.75rem; // 12px;
+$notes11: 0.6875rem; // 11px;
+
+// 灰階
+$blackColor: black;
+$gray850Color: #202020;
+$gray800Color: #333333;
+$gray600Color: #666666;
+$gray400Color: #999999;
+$gray200Color: #cccccc;
+$gray100Color: #e5e5e5;
+$gray50Color: #f2f2f2;
+$riceColor: #F2F0F2;
+$whiteColor: white;
+
+// 品牌色
+$basicGreenColor:#78b620;
+$lightOrangeColor:#ffac28;
+$focusRedColor:#FF3131;
+$focusYelloColor:#FCF003;
+$basicBlueColor:rgb(42, 92, 190);
+$lightBlueColor:rgb(160, 196, 250);
+$spaceBlueColor:rgb(201, 220, 248);
+
+
+$gap:8px;
+$round:10px;
+$border1:1px;
+$shadow:0px 1px 4px $gray100Color;
+$cardBorder:$border1 solid $gray200Color;
+
+$leftMenuWidth:calc(#{$sm} * .15);
+$sectionWidth:calc(#{$leftMenuWidth} + #{$gap}*2 + 590px);
+
+@mixin chartWidth {
+    letter-spacing: .18px;
+    text-indent: .18px;
+}
+
+@mixin  flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

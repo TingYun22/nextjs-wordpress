@@ -1,0 +1,13 @@
+@import './../StyleGuide.scss';
+
+.footer {
+    @include flexCenter();
+    flex: 1;
+    padding: $head32 0;
+    border-top: $border1 solid $gray100Color;
+   
+    a {
+      @include flexCenter();
+      flex-grow: 1;
+    }
+}
