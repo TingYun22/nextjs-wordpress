@@ -6,6 +6,7 @@ import { addApolloState, initializeApollo } from '../../lib/apolloClient'
 
 import PostList from '../PostList'
 import Menu from '../Menu'
+import styles from '../../styles/components/indexPage.module.scss'
 
 
 
@@ -18,8 +19,10 @@ export default function IndexPage() {
   return (
     <>
       <headers>
-        <div>
-          TingYun
+        <div className={styles.main}>
+          <h1 className={styles.title}>
+            T<span>ing</span> Y<span>un</span>
+          </h1>
         </div>
         <Menu />
       </headers>
